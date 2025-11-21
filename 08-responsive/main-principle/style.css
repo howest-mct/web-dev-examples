@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.test {
+  padding: 1rem;
+  color: darkred;
+  background-color: hotpink;
+}
+
+.test__blue {
+  display: none;
+}
+
+@media (width >= 600px) {
+  .test {
+    color: white;
+    background-color: blue;
+  }
+
+  .test__pink {
+    display: none;
+  }
+
+  .test__blue {
+    display: block;
+  }
+}
