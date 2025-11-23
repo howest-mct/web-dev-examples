@@ -18,6 +18,12 @@
  # ELEMENTS
 /*---------------------------------------*/
 
+/*
+  Desktop first global font sizing
+  Eerst de font-size vergroten voor grote schermen, om daarna aan te passen voor kleinere schermen
+  Terwijl de standaard font-sise 1rem is -> Dom!
+*/
+
 html {
   font-family: Arial, sans-serif;
   font-size: 1.125rem;
@@ -53,6 +59,12 @@ html {
     padding: 1rem;
   }
 }
+
+/* 
+  Desktop first navigation 
+  Eerst naast elkaar zetten om daarna opnieuw onder elkaar te zetten bij kleinere schermen
+  Terwijl list-items standaard onder elkaar staan -> Dom!
+*/
 
 .c-nav__list {
   display: flex;

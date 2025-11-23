@@ -23,6 +23,10 @@ html {
   line-height: 1.5;
 }
 
+/* 
+  Mobile first font sizing 
+*/
+
 @media (width >= 600px) {
   html {
     font-size: 1.125rem;
@@ -62,6 +66,11 @@ html {
 .c-nav__link--active {
   color: white;
 }
+
+/* 
+  Mobile first navigation 
+  Standaard staan list-items onder elkaar, dus enkele bij grotere schermen naast elkaar zetten
+*/
 
 @media (width >= 600px) {
   .c-nav__list {
