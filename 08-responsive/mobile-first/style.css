@@ -1,0 +1,75 @@
+/*---------------------------------------/*
+ # SETTINGS
+/*---------------------------------------*/
+
+/*---------------------------------------/*
+ # GENERIC
+/*---------------------------------------*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*---------------------------------------/*
+ # ELEMENTS
+/*---------------------------------------*/
+
+html {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+@media (width >= 600px) {
+  html {
+    font-size: 1.125rem;
+  }
+}
+
+/*---------------------------------------/*
+ # OBJECTS
+/*---------------------------------------*/
+
+.o-container {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+/*---------------------------------------/*
+ # COMPONENTS
+/*---------------------------------------*/
+
+.c-header {
+  padding: 1rem;
+  background-color: black;
+}
+
+@media (width >= 600px) {
+  .c-header {
+    padding: 2rem;
+  }
+}
+
+.c-nav__link {
+  text-decoration: none;
+  color: gray;
+}
+
+.c-nav__link:hover,
+.c-nav__link--active {
+  color: white;
+}
+
+@media (width >= 600px) {
+  .c-nav__list {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+/*---------------------------------------/*
+ # UTILITIES
+/*---------------------------------------*/
