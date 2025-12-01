@@ -1,0 +1,77 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --charcoal: #233d4dff;
+  --pumpkin: #fe7f2dff;
+  --sunglow: #fcca46ff;
+  --olivine: #a1c181ff;
+  --polished-pine: #619b8a;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+
+.boxes:hover .box {
+  translate: 200px;
+}
+
+.box {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 1rem;
+
+  transition: translate 1.5s;
+}
+
+.box-explanation {
+  justify-self: end;
+}
+
+.one {
+  background: var(--charcoal);
+  transition-timing-function: linear;
+}
+
+.two {
+  background: var(--polished-pine);
+  transition-timing-function: ease;
+}
+
+.three {
+  background: var(--olivine);
+  transition-timing-function: ease-in;
+}
+
+.four {
+  background: var(--sunglow);
+  transition-timing-function: ease-out;
+}
+
+.five {
+  background: var(--pumpkin);
+  /* bounce */
+  transition-timing-function: ease-in-out;
+}
+
+.six {
+  background: var(--charcoal);
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.seven {
+  background: var(--polished-pine);
+  transition-timing-function: steps(3);
+}
