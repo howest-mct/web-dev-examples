@@ -1,18 +1,21 @@
-html {
-  box-sizing: border-box;
-  background-color: black;
-  color: white;
+:root {
+  --yellow: #ffff17;
 }
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: black;
+  color: var(--yellow);
 }
 
 .logo {
   overflow: visible;
   max-width: 100%;
   height: auto;
-  fill: currentColor;
+  /* fill: currentColor; */
 }
