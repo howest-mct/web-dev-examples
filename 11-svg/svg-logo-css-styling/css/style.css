@@ -1,0 +1,26 @@
+:root {
+  --yellow: #ffff17;
+}
+
+html {
+  box-sizing: border-box;
+  background-color: black;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.logo {
+  overflow: visible;
+  fill: var(--yellow);
+}
+
+.logo__path-1 {
+  fill: none;
+  stroke: var(--yellow);
+  stroke-width: 5;
+  stroke-linejoin: round;
+}
