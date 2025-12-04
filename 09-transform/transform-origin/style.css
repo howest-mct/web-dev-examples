@@ -29,8 +29,9 @@ body {
 }
 
 .box--transformed {
-  scale: 1.5;
-  rotate: 45deg;
+  /* scale: 1.5; */
+  /* rotate: 45deg; */
+  translate: 10rem;
   /* the same */
   transform-origin: 0 0;
   transform-origin: top left;

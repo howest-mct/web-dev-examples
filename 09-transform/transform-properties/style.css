@@ -5,6 +5,7 @@ html {
 *,
 *:before,
 *:after {
+  margin: 0;
   box-sizing: inherit;
 }
 
@@ -26,10 +27,15 @@ body {
   background-color: var(--pumpkin);
   width: 10rem;
   height: 10rem;
+  padding: 1rem;
 }
 
 .box--transformed {
-  scale: 1.5;
-  rotate: 45deg;
-  translate: 4rem;
+  /* height: 15rem;
+  width: 15rem; */
+  /* scale: 0 2; */
+
+  /* rotate: 720deg; */
+  translate: 4rem 4rem;
+  transform: skew(15deg, 15deg);
 }

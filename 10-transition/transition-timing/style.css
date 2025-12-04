@@ -33,7 +33,7 @@ html {
   height: 5rem;
   margin-bottom: 1rem;
 
-  transition: translate 1.5s;
+  transition: translate 0.25s;
 }
 
 .box-explanation {
@@ -68,7 +68,7 @@ html {
 
 .six {
   background: var(--charcoal);
-  transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .seven {
