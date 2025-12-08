@@ -1,0 +1,67 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.5;
+  font-family: sans-serif;
+  color: #5c6366;
+  padding: 1.5rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*
+  Component: Position
+  ---
+  Position examples
+*/
+
+.c-position {
+  padding: 24px;
+  background-color: #fff;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.075),
+    0 2px 25px rgba(0, 0, 0, 0.25);
+  background-color: MistyRose;
+}
+
+.c-position--relative {
+  position: relative;
+  top: 1.5rem;
+  left: 1.5rem;
+  margin-top: 1.5rem;
+  background-color: NavajoWhite;
+  /*z-index: 1;*/
+}
+
+.c-position--absolute {
+  position: absolute;
+  top: 48px;
+  left: 48px;
+  right: 48px;
+  background-color: PowderBlue;
+}
+
+.c-position--fixed {
+  position: fixed;
+  bottom: 48px;
+  left: 48px;
+  right: 48px;
+  background-color: Plum;
+  z-index: 100;
+}
+
+.c-position--sticky {
+  position: sticky;
+  top: 24px;
+  background-color: DarkSalmon;
+}
+
+.c-position--sticky + * {
+  padding-top: 24px;
+}

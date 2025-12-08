@@ -1,0 +1,39 @@
+:root {
+  --color: black;
+  --background-color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color: white;
+    --background-color: black;
+  }
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.5;
+  font-family: sans-serif;
+  color: var(--color);
+  background-color: var(--background-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.c-card {
+  max-width: 36em;
+  margin: 0 auto;
+}

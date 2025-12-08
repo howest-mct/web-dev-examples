@@ -1,0 +1,39 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.5;
+  font-family: sans-serif;
+  font-size: 2rem;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.grid {
+  display: grid;
+  min-height: 100vh;
+}
+
+.one,
+.two {
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.one {
+  background-color: orange;
+  /* z-index: 1; */
+}
+
+.two {
+  background-color: hotpink;
+}

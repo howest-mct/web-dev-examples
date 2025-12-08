@@ -1,0 +1,32 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.5;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.container {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.intro {
+  padding: 2rem;
+  background-color: hotpink;
+  min-height: calc(100vh - 8rem);
+  display: grid;
+  place-items: center;
+}
