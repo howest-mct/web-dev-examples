@@ -1,0 +1,47 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --pink: hsl(330 100% 60%);
+  --purple: hsl(300 80% 50%);
+}
+
+body {
+  padding: 1rem;
+}
+
+.card {
+  background-color: var(--pink);
+  padding: 1rem;
+  transition: all 0.1s;
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  & + & {
+    margin-top: 1rem;
+  }
+
+  &:hover {
+    scale: 1.01;
+  }
+
+  &:has(h3) {
+    background-color: var(--purple);
+  }
+
+  &__header {
+    /* won't work for now */
+    font-size: 3rem;
+  }
+}

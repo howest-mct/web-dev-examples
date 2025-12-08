@@ -1,0 +1,41 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --pink: hsl(330 100% 60%);
+  --green: hsl(100 60% 50%);
+}
+
+body {
+  padding: 1rem;
+  min-height: 100vh;
+  background-color: var(--pink);
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  display: grid;
+  place-items: center;
+  transition: 0.25s;
+
+  &:has(a:hover) {
+    background-color: var(--green);
+
+    .daar {
+      rotate: 360deg;
+      scale: 2;
+    }
+  }
+}
+
+a {
+  color: inherit;
+}
+
+.daar {
+  transition: 0.2s;
+}
