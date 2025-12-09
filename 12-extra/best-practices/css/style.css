@@ -1,0 +1,188 @@
+/*---------------------------------------/*
+ # SETTINGS
+/*---------------------------------------*/
+
+/* Use CSS variables here */
+
+:root {
+  --black: #1e170d;
+  --antique-white: #f1ebcf;
+
+  --space-1: 1rem;
+  --space-15: 1.5rem;
+  --space-3: 3rem;
+}
+
+/*---------------------------------------/*
+ # GENERIC
+/*---------------------------------------*/
+
+/* Reset elements */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*---------------------------------------/*
+ # ELEMENTS
+/*---------------------------------------*/
+
+/* Basic default styling  */
+
+html {
+  /* Set default font family and line height */
+  font-family: sans-serif;
+  line-height: 1.5;
+  /* change the default font size if it's not the standard 16px */
+  font-size: 112.5%; /* Remember: 1rem now becomes 18px */
+  /* Set the default text color */
+  color: var(--black);
+  /* Set the default background color for the whole page */
+  background-color: var(--antique-white);
+}
+
+/* fluid images */
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Default typography styling, add more styling like font-family here */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* default link */
+
+a {
+  color: var(--black);
+}
+
+/*---------------------------------------/*
+ # OBJECTS
+/*---------------------------------------*/
+
+/* Container class to center all elements that are inside of it in the middle of the screen */
+
+.o-container {
+  /* Make this value as big as you want */
+  max-width: 64rem;
+  /* Center the container */
+  margin: 0 auto;
+}
+
+/*---------------------------------------/*
+ # COMPONENTS
+/*---------------------------------------*/
+
+/* header styles */
+
+.c-header {
+  padding: var(--space-15);
+  background-color: var(--black);
+  color: var(--antique-white);
+}
+
+.c-header__container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-15);
+}
+
+@media (width >= 768px) {
+  .c-header__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* logo styles */
+
+.c-logo {
+  font-size: 1rem;
+}
+
+/* navigation styles */
+
+.c-nav__list {
+  list-style: none;
+}
+
+.c-nav__link {
+  text-decoration: none;
+  color: var(--antique-white);
+}
+
+@media (width >= 768px) {
+  .c-nav__list {
+    display: flex;
+    gap: var(--space-15);
+  }
+}
+
+/* section styles */
+
+.c-section {
+  padding: var(--space-3) var(--space-15);
+}
+
+.c-section__container {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.c-section__image {
+  mix-blend-mode: darken;
+}
+
+.c-section__content {
+  display: grid;
+  gap: var(--space-15);
+  justify-items: start;
+}
+
+@media (width >= 992px) {
+  .c-section__container {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3);
+    align-items: center;
+  }
+}
+
+/* (link)button styles */
+
+.c-button {
+  display: inline-block;
+  padding: var(--space-1) var(--space-15);
+  background-color: var(--black);
+  color: var(--antique-white);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4rem;
+}
+
+/*---------------------------------------/*
+ # UTILITIES
+/*---------------------------------------*/
