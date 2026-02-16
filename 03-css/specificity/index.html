@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cascade demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <p>
+      This is a demonstration of the CSS cascade. The text is blue, because the
+      second rule overrides the first one. You can clearly see the cascade in
+      action when you inspect the element in the browser's developer tools.
+    </p>
+    <p class="special">
+      This paragraph has a class of "special". It's green because the rule with
+      the class selector has a higher specificity than the rule that targets all
+      paragraphs. No matter the order of the rules, the one with the class
+      selector will always win over the one that targets all paragraphs (type
+      selector). You can verify this by inspecting the element in the browser's
+      developer tools.
+    </p>
+  </body>
+</html>
