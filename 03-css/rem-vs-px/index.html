@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rem vs Px Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <p class="intro">
+        Change your browser font-size setting and compare the two cards below.
+        The rem card scales with the browser setting. The px card stays fixed.
+      </p>
+
+      <div class="grid">
+        <article class="card card-rem">
+          <h2>Rem-based</h2>
+          <p>
+            This card uses rem for font size, padding, and border radius. When
+            the browser default font size changes, everything scales together.
+          </p>
+          <p class="note">Font: 1.125rem, Padding: 1.5rem</p>
+        </article>
+
+        <article class="card card-px">
+          <h2>Px-based</h2>
+          <p>
+            This card uses px for font size, padding, and border radius. When
+            the browser default font size changes, these sizes stay the same.
+          </p>
+          <p class="note">Font: 18px, Padding: 24px</p>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>

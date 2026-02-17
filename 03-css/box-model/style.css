@@ -12,11 +12,6 @@ body {
   width: 500px;
 }
 
-.block-element:nth-of-type(2) {
-  /* creates overflow */
-  height: 50px;
-}
-
 .inline-element {
   /* doesn't apply */
   width: 500px;
