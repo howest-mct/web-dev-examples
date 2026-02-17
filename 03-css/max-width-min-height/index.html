@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Max-width demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Max-width vs Fixed Width</h1>
+    <div class="width-example fixed-width">
+      This element has a fixed width of 500px. If the viewport is narrower than
+      500px, the element will overflow and create a horizontal scrollbar.
+    </div>
+    <div class="width-example">
+      This element has a max-width of 500px. If the viewport is narrower than
+      500px, the element will shrink to fit the available space, preventing
+      overflow and horizontal scrolling. This makes it more responsive and
+      adaptable to different screen sizes.
+    </div>
+
+    <h1>Min-height vs Fixed Height</h1>
+    <div class="height-example fixed-height">
+      This element has a fixed height of 100px. If the content exceeds 100px, it
+      will overflow outside the element's boundaries. This can lead to content
+      being cut off or hidden, especially on smaller screens or when the content
+      is dynamic.
+    </div>
+    <div class="height-example min-height-demo">
+      This element has a min-height of 100px. It will be at least 100px tall,
+      but if the content requires more space, the element will grow to
+      accommodate it, preventing overflow. This makes it more flexible and
+      content-aware.
+    </div>
+  </body>
+</html>

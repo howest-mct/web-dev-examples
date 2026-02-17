@@ -1,0 +1,41 @@
+body {
+  font-size: 1.25rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  margin: 2rem 1rem 1rem 1rem;
+  font-size: 1.5rem;
+}
+
+.width-example {
+  background-color: hotpink;
+  border: 10px solid purple;
+  padding: 2rem;
+  margin: 1rem;
+  /* width: 500px; */
+  /* Don't set a fixed width, but limit the maximum width of the element */
+  max-width: 500px;
+}
+
+.width-example.fixed-width {
+  width: 500px;
+}
+
+.height-example {
+  background-color: lightblue;
+  border: 10px solid navy;
+  padding: 2rem;
+  margin: 1rem;
+  max-width: 500px;
+  /* min-height: 100px; */
+}
+
+.height-example.fixed-height {
+  height: 100px;
+}
+
+.height-example.min-height-demo {
+  min-height: 100px;
+}
