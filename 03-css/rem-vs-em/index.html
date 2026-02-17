@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rem vs Em Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <h1>Rem vs Em</h1>
+      <p class="intro">
+        This example shows how em is relative to the parent font size, while rem
+        is relative to the root (html) font size.
+      </p>
+
+      <section class="example">
+        <h2>Em (relative to parent)</h2>
+        <div class="parent">
+          Parent text size is 2rem.
+          <div class="child">
+            Child text size is 1.5em, so it becomes 1.5 * 2rem = 3rem.
+          </div>
+        </div>
+      </section>
+
+      <section class="example">
+        <h2>Rem (relative to root)</h2>
+        <div class="parent-rem">
+          Parent text size is 2rem.
+          <div class="child-rem">
+            Child text size is 1.5rem, so it stays tied to the root size.
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
