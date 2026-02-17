@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box-model demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="block-element content-box">
+      This element uses the default content-box box-sizing model. The width and
+      height of the element are determined by the content area only. This means
+      that the actual size of the element will be larger than the specified
+      width and height, because the padding and border are added to the content
+      area. This can be less intuitive to work with, because you have to account
+      for the padding and border when calculating the size of the element.
+    </div>
+    <div class="block-element border-box">
+      This element uses the border-box box-sizing model. The width and height of
+      the element are determined by the content area, padding, and border. This
+      means that the actual size of the element will be equal to the specified
+      width and height, regardless of the padding and border. This can be more
+      intuitive to work with, because you don't have to worry about the padding
+      and border affecting the size of the element.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Margin Collapsing Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Margin Collapsing Examples</h1>
+
+    <section class="example">
+      <h2>1. Adjacent Siblings (Vertical Margins Collapse)</h2>
+      <div class="box box-1">Box 1 has margin-bottom: 30px</div>
+      <div class="box box-2">
+        Box 2 has margin-top: 20px
+        <br />
+        Result: 30px gap (not 50px). Margins collapse to the larger value.
+      </div>
+    </section>
+
+    <section class="example">
+      <h2>2. Parent and First/Last Child</h2>
+      <div class="parent">
+        <div class="child">
+          Child has margin-top: 40px
+          <br />
+          Parent has margin-top: 20px
+          <br />
+          Result: Margins collapse through parent
+        </div>
+      </div>
+    </section>
+
+    <section class="example">
+      <h2>3. Preventing Collapse with Padding or Border</h2>
+      <div class="parent-no-collapse">
+        <div class="child">
+          Parent has padding/border
+          <br />
+          Child margin no longer collapses
+        </div>
+      </div>
+    </section>
+
+    <section class="example">
+      <h2>4. Preventing Collapse with flow-root</h2>
+      <div class="parent-flow-root">
+        <div class="child">
+          Parent has display: flow-root
+          <br />
+          Creates new block formatting context
+          <br />
+          Child margin no longer collapses (no padding/border needed)
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
