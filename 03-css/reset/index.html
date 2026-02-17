@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Reset Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>CSS Reset Demonstration</h1>
+    <p>
+      This page demonstrates the reset styles applied to common HTML elements.
+    </p>
+
+    <section>
+      <h2>Typography</h2>
+      <p>
+        Notice how all elements have consistent line-height (1.5) and use the
+        sans-serif font family set in the reset.
+      </p>
+      <ul>
+        <li>No default margins on elements</li>
+        <li>Consistent font across all elements</li>
+        <li>All elements use box-sizing: border-box</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Responsive Images</h2>
+      <p>
+        Images are set to display: block and max-width: 100%, making them
+        responsive by default.
+      </p>
+      <img src="https://picsum.photos/600/300" alt="Random placeholder image" />
+    </section>
+
+    <section>
+      <h2>Box Sizing</h2>
+      <div
+        style="
+          width: 200px;
+          padding: 20px;
+          border: 2px solid #333;
+          background: #f0f0f0;
+        "
+      >
+        This box is 200px wide including padding and border thanks to
+        box-sizing: border-box
+      </div>
+    </section>
+  </body>
+</html>

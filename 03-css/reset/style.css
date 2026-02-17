@@ -1,0 +1,54 @@
+/* Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+}
+
+/* Set a comfortable line-height and font-family for the entire document */
+html {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+/* Improve the appearance of images and media elements */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block; /* Remove the default inline behavior of images and media elements */
+  max-width: 100%; /* Make images responsive by default */
+  height: auto; /* Maintain aspect ratio of images */
+}
+
+/* Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Custom text styles */
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+p,
+ul,
+img {
+  margin-bottom: 1rem;
+}
