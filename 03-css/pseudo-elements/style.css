@@ -1,0 +1,13 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 2rem;
+}
+
+p::first-line {
+  font-weight: bold;
+}
+
+p::first-letter {
+  font-size: 2em;
+}
