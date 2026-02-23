@@ -1,49 +1,52 @@
-* {
-  margin: 0;
-  padding: 0;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+  margin: 0;
 }
 
 html {
-  font-family: "Roboto", sans-serif;
-  line-height: 1.6;
-  background: #f6f7fb;
-  color: #1b1b1b;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
 }
 
-.page {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem 1.5rem;
+body {
+  padding: 1.5rem;
 }
 
 h1 {
   font-size: 2rem;
-  margin-bottom: 0.5rem;
+  line-height: 1;
+  margin-bottom: 1rem;
 }
 
-.lead {
-  margin-bottom: 2rem;
-  color: #4b5563;
+.container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .sample {
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 0.75rem;
-  padding: 1.25rem;
-  margin-bottom: 1rem;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  margin-top: 2rem;
 }
 
-.sample h2 {
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-  color: #374151;
+.sample__title {
+  font-weight: 400;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: gray;
 }
 
-.sample p {
+.sample__text {
   font-size: 1.25rem;
+}
+
+.thin {
+  font-weight: 100;
+}
+
+.extra-light {
+  font-weight: 200;
 }
 
 .light {
@@ -54,11 +57,22 @@ h1 {
   font-weight: 400;
 }
 
+.medium {
+  font-weight: 500;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
 .bold {
   font-weight: 700;
 }
 
-.italic {
-  font-weight: 400;
-  font-style: italic;
+.extra-bold {
+  font-weight: 800;
+}
+
+.black {
+  font-weight: 900;
 }
