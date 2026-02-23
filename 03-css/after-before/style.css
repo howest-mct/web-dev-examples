@@ -1,0 +1,13 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 2rem;
+}
+
+a::before {
+  content: "🔗 ";
+}
+
+a::after {
+  content: " →";
+}
