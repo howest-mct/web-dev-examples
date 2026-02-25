@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>z-index demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <h1>z-index</h1>
+      <p class="lead">
+        These boxes overlap because they have
+        <code>position: relative</code> and have some negative
+        <code>top</code> values. The ones with a higher
+        <code>z-index</code> appear on top although they are in the opposite
+        order in the HTML.
+      </p>
+
+      <label>
+        <input type="checkbox" id="toggle-zindex" />
+        Remove z-index from boxes
+      </label>
+
+      <section
+        class="stack-area"
+        id="stack-area"
+        aria-label="Overlapping z-index demo"
+      >
+        <div class="box z3">z-index: 3</div>
+        <div class="box z2">z-index: 2</div>
+        <div class="box z1">z-index: 1</div>
+      </section>
+
+      <script>
+        const checkbox = document.getElementById("toggle-zindex");
+        const stackArea = document.getElementById("stack-area");
+
+        checkbox.addEventListener("change", () => {
+          if (checkbox.checked) {
+            stackArea.classList.add("no-z-index");
+          } else {
+            stackArea.classList.remove("no-z-index");
+          }
+        });
+      </script>
+    </main>
+  </body>
+</html>
