@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position: absolute demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <h1>Position: Absolute</h1>
+      <p class="lead">
+        The element is positioned absolute relative to its nearest positioned
+        ancestor.
+      </p>
+
+      <label>
+        <input type="checkbox" id="toggle-position" />
+        Disable position: relative on container
+      </label>
+
+      <div class="container-box" id="container">
+        <div class="box absolute-box">Absolute</div>
+      </div>
+
+      <script>
+        const checkbox = document.getElementById("toggle-position");
+        const container = document.getElementById("container");
+
+        checkbox.addEventListener("change", () => {
+          if (checkbox.checked) {
+            container.classList.add("no-position");
+          } else {
+            container.classList.remove("no-position");
+          }
+        });
+      </script>
+    </main>
+  </body>
+</html>
