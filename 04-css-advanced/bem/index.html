@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BEM Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <h1>BEM Naming Convention</h1>
+      <p class="lead">
+        Block, Element, Modifier. A way to organize and name CSS classes.
+      </p>
+
+      <section class="sample">
+        <h2>Buttons (Block + Modifiers)</h2>
+        <p>
+          Buttons use modifiers to change appearance without changing structure.
+        </p>
+        <div class="button-group">
+          <button class="c-button">Default</button>
+          <button class="c-button c-button--primary">Primary</button>
+          <button class="c-button c-button--secondary">Secondary</button>
+        </div>
+      </section>
+
+      <section class="sample">
+        <h2>Navigation (Block + Elements + Modifier)</h2>
+        <p>Navigation uses elements for child parts and modifiers for state.</p>
+        <nav class="c-nav">
+          <ul class="c-nav__list">
+            <li class="c-nav__item">
+              <a href="#" class="c-nav__link c-nav__link--active">Home</a>
+            </li>
+            <li class="c-nav__item">
+              <a href="#" class="c-nav__link">About</a>
+            </li>
+            <li class="c-nav__item">
+              <a href="#" class="c-nav__link">Services</a>
+            </li>
+            <li class="c-nav__item">
+              <a href="#" class="c-nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </main>
+  </body>
+</html>
