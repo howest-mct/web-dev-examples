@@ -18,6 +18,14 @@ body {
   background: #fff;
 }
 
+label {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
 .page {
   max-width: 800px;
   margin: 0 auto;
@@ -35,15 +43,12 @@ h1 {
 }
 
 .demo-container {
-  display: flex;
-  gap: 1rem;
   padding: 1.25rem;
   border: 2px dashed #c7c7c7;
   background: #fff;
 }
 
 .box {
-  width: 100px;
   height: 100px;
   display: flex;
   align-items: center;
@@ -64,7 +69,14 @@ h1 {
 
 .relative {
   position: relative;
-  top: 20px;
-  left: 20px;
+  top: 3rem;
+  left: 3rem;
   background: #d32f2f;
+}
+
+.relative.use-margin {
+  top: 0;
+  left: 0;
+  margin-top: 3rem;
+  margin-left: 3rem;
 }

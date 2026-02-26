@@ -10,15 +10,33 @@
     <main class="page">
       <h1>Position: Relative</h1>
       <p class="lead">
-        The element is positioned relative to its normal position. The space it
-        would have occupied is preserved.
+        The element is positioned relative to its normal position. The "top",
+        "right", "bottom", and "left" properties will cause the element to be
+        adjusted away from its normal position, but the space it would have
+        occupied is still preserved in the layout. This means that the element
+        can be moved without affecting the layout of other elements on the page.
+        This is not the same as using margin.
       </p>
+
+      <label>
+        <input type="checkbox" id="toggle-margin" />
+        use margin
+      </label>
 
       <div class="demo-container">
         <div class="box">1</div>
-        <div class="box relative">2 (Relative)</div>
+        <div class="box relative" id="relative-box">2 (Relative)</div>
         <div class="box">3</div>
       </div>
+
+      <script>
+        const checkbox = document.getElementById("toggle-margin");
+        const relativeBox = document.getElementById("relative-box");
+
+        checkbox.addEventListener("change", () => {
+          relativeBox.classList.toggle("use-margin", checkbox.checked);
+        });
+      </script>
     </main>
   </body>
 </html>
