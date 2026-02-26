@@ -18,8 +18,8 @@
       </p>
 
       <label>
-        <input type="checkbox" id="toggle-zindex" />
-        Remove z-index from boxes
+        <input type="checkbox" id="toggle-zindex" checked />
+        Add z-index to boxes
       </label>
 
       <section
@@ -27,22 +27,27 @@
         id="stack-area"
         aria-label="Overlapping z-index demo"
       >
-        <div class="box z3">z-index: 3</div>
-        <div class="box z2">z-index: 2</div>
-        <div class="box z1">z-index: 1</div>
+        <div class="box z3" data-zindex="3">z-index: 3</div>
+        <div class="box z2" data-zindex="2">z-index: 2</div>
+        <div class="box z1" data-zindex="1">z-index: 1</div>
       </section>
 
       <script>
         const checkbox = document.getElementById("toggle-zindex");
         const stackArea = document.getElementById("stack-area");
+        const boxes = stackArea.querySelectorAll(".box");
 
-        checkbox.addEventListener("change", () => {
-          if (checkbox.checked) {
-            stackArea.classList.add("no-z-index");
-          } else {
-            stackArea.classList.remove("no-z-index");
-          }
-        });
+        const setZindex = () => {
+          stackArea.classList.toggle("no-z-index", !checkbox.checked);
+
+          boxes.forEach((box) => {
+            const value = checkbox.checked ? box.dataset.zindex : "auto";
+            box.textContent = `z-index: ${value}`;
+          });
+        };
+
+        setZindex(); // Set initial state based on checkbox
+        checkbox.addEventListener("change", setZindex);
       </script>
     </main>
   </body>
