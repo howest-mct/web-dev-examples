@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BEM specificity and cascade demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <h1>BEM: Cascade Order Matters</h1>
+      <p class="lead">
+        These buttons use BEM modifiers. All selectors have the same
+        specificity, so the declaration order decides which style wins.
+      </p>
+
+      <section class="sample">
+        <h2>Buttons</h2>
+        <p>
+          <code>.c-button--secondary</code> is declared before
+          <code>.c-button</code>, so the base button styles override it.
+        </p>
+        <p class="button-group">
+          <button class="c-button">Default</button>
+          <button class="c-button c-button--primary">Primary</button>
+          <button class="c-button c-button--secondary">Secondary</button>
+        </p>
+        <p>Look at the CSS in the inspector to see the cascade in action.</p>
+        <p>
+          <img
+            width="620"
+            src="./screenshot-devtools.png"
+            alt="Screenshot of browser devtools showing the cascade order of CSS rules for the secondary button"
+          />
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
