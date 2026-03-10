@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="wrapper">
+      <h1 class="title">flex-shrink</h1>
+
+      <h2 class="subtitle">All items can shrink (flex-shrink: 1)</h2>
+      <div class="flex flex--all-shrink">
+        <div class="flex__item flex__item--1">1</div>
+        <div class="flex__item flex__item--2">2 longer content</div>
+        <div class="flex__item flex__item--3">3</div>
+      </div>
+
+      <h2 class="subtitle">
+        Middle item cannot shrink (item 2 = flex-shrink: 0)
+      </h2>
+      <div class="flex flex--middle-fixed">
+        <div class="flex__item flex__item--1">1</div>
+        <div class="flex__item flex__item--2">2 longer content</div>
+        <div class="flex__item flex__item--3">3</div>
+      </div>
+    </main>
+  </body>
+</html>
