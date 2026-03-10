@@ -8,8 +8,10 @@ body {
   font-size: 1.5rem;
 }
 
-.wrapper {
+.container {
+  max-width: 1000px;
   padding: 1rem;
+  margin: 0 auto;
 }
 
 .title {
@@ -22,7 +24,6 @@ body {
 }
 
 .flex {
-  max-width: 1000px;
   padding: 1rem;
   background-color: gainsboro;
   display: flex;
@@ -31,7 +32,7 @@ body {
 }
 
 .flex__item {
-  padding: 2rem 1rem;
+  padding: 1.5rem;
   color: white;
   flex-basis: 400px;
   flex-grow: 1;
