@@ -25,40 +25,43 @@ body {
   font-size: 1.1rem;
 }
 
-.container-wide {
-  max-width: none;
-}
-
 .grid {
+  display: grid;
+  gap: 0.5rem;
   padding: 1rem;
   background-color: gainsboro;
-  display: grid;
-  gap: 1rem;
 
-  /* Compare intrinsic sizing keywords side by side */
-  grid-template-columns: auto min-content max-content;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto 14rem auto;
 
   margin-bottom: 2rem;
-  overflow-x: auto;
 }
 
 .grid__item {
-  padding: 1.5rem;
+  padding: 0.75rem;
   color: white;
-}
-
-.grid__item--label {
+  min-height: 50px;
+  display: grid;
+  place-items: center;
   font-weight: 700;
 }
 
-.grid__item:nth-child(1n) {
+.grid__item--header {
+  grid-column: 1 / -1;
   background-color: orange;
 }
 
-.grid__item:nth-child(2n) {
+.grid__item--main {
+  grid-column: 1 / 10;
   background-color: orangered;
 }
 
-.grid__item:nth-child(3n) {
+.grid__item--sidebar {
+  grid-column: 10 / -1;
+  background-color: tomato;
+}
+
+.grid__item--footer {
+  grid-column: 1 / -1;
   background-color: red;
 }

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>align-items and justify-items</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="title">
+        <code>align-items</code>, <code>justify-items</code>,
+        <code>align-self</code>, <code>justify-self</code>
+      </h1>
+      <div class="grid">
+        <div class="grid__item">1 default</div>
+        <div class="grid__item">2 default</div>
+        <div class="grid__item">3 default</div>
+        <div class="grid__item grid__item--start">4 self start/start</div>
+        <div class="grid__item">5 default</div>
+        <div class="grid__item grid__item--end">6 self end/end</div>
+        <div class="grid__item">7 default</div>
+        <div class="grid__item grid__item--stretch">8 self stretch</div>
+        <div class="grid__item">9 default</div>
+      </div>
+      <p>
+        In this example, we demonstrate the use of <code>align-items</code>,
+        <code>justify-items</code>, <code>align-self</code>, and
+        <code>justify-self</code> to control the alignment of grid items within
+        their grid areas. Item 1, 2, 3, 5, 7, and 9 are aligned to the center of
+        their grid areas because they follow the alignment and justification of
+        the grid container that is set to <code>align-items: center;</code> and
+        <code>justify-items: center;</code>. The other items have their own
+        alignment and justification set using <code>align-self</code> and
+        <code>justify-self</code>.
+      </p>
+    </main>
+  </body>
+</html>
