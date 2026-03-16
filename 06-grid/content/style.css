@@ -1,20 +1,29 @@
 @import "../global.css";
 
+.container-wide {
+  max-width: none;
+}
+
 .grid {
   padding: 1rem;
   background-color: gainsboro;
   display: grid;
   gap: 1rem;
 
-  /* 1:2:3 ratio between the three columns */
-  grid-template-columns: 1fr 2fr 3fr;
+  /* Compare intrinsic sizing keywords side by side */
+  grid-template-columns: auto min-content max-content;
 
   margin-bottom: 2rem;
+  overflow-x: auto;
 }
 
 .grid__item {
   padding: 1.5rem;
   color: white;
+}
+
+.grid__item--label {
+  font-weight: 700;
 }
 
 .grid__item:nth-child(1n) {

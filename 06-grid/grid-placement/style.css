@@ -1,27 +1,4 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: sans-serif;
-  font-size: 1.5rem;
-}
-
-.container {
-  max-width: 1000px;
-  padding: 1rem;
-  margin: 0 auto;
-}
-
-.title {
-  margin: 0 0 1rem 0;
-}
-
-.subtitle {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.1rem;
-}
+@import "../global.css";
 
 .grid {
   padding: 1rem;

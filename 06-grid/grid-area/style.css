@@ -1,0 +1,44 @@
+@import "../global.css";
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+  gap: 0.5rem;
+  padding: 1rem;
+  background-color: gainsboro;
+  margin-bottom: 2rem;
+}
+
+.grid__item {
+  padding: 0.75rem;
+  color: white;
+  min-height: 50px;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+
+.header {
+  grid-area: header;
+  background-color: orange;
+}
+
+.main {
+  grid-area: main;
+  background-color: orangered;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: tomato;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: red;
+}

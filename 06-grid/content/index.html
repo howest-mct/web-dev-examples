@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>auto min-content max-content</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container container-wide">
+      <h1 class="title">
+        <code>auto</code>, <code>min-content</code> en <code>max-content</code>
+      </h1>
+      <div class="grid">
+        <div class="grid__item grid__item--label"><code>auto</code></div>
+        <div class="grid__item grid__item--label"><code>min-content</code></div>
+        <div class="grid__item grid__item--label"><code>max-content</code></div>
+
+        <div class="grid__item">
+          Deze kolom gebruikt de overblijvende ruimte en kan normaal wrappen.
+        </div>
+        <div class="grid__item">supercalifragilisticexpialidocious</div>
+        <div class="grid__item">
+          Deze kolom wordt zo breed als de volledige zin zonder wrapping.
+        </div>
+
+        <div class="grid__item">
+          Nog een rij om te tonen dat <code>auto</code> zich aanpast aan de
+          beschikbare ruimte.
+        </div>
+        <div class="grid__item">
+          pneumonoultramicroscopicsilicovolcanoconiosis
+        </div>
+        <div class="grid__item">Korte tekst</div>
+      </div>
+      <p>
+        <code>auto</code> gebruikt de beschikbare vrije ruimte.
+        <code>min-content</code> maakt de kolom zo smal mogelijk zonder content
+        af te knippen (meestal de breedte van het langste woord).
+        <code>max-content</code> maakt de kolom zo breed als de volledige inhoud
+        zonder wrapping.
+      </p>
+    </main>
+  </body>
+</html>

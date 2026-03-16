@@ -5,6 +5,10 @@
   background-color: gainsboro;
   display: grid;
   gap: 1rem;
+
+  /* Responsive columns without media queries */
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
   margin-bottom: 2rem;
 }
 
@@ -13,14 +17,14 @@
   color: white;
 }
 
-.grid__item:nth-child(1) {
+.grid__item:nth-child(1n) {
   background-color: orange;
 }
 
-.grid__item:nth-child(2) {
+.grid__item:nth-child(2n) {
   background-color: orangered;
 }
 
-.grid__item:nth-child(3) {
+.grid__item:nth-child(3n) {
   background-color: red;
 }
