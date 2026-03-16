@@ -37,6 +37,9 @@ body {
   align-items: center;
   justify-items: center;
 
+  /* shorthand */
+  place-items: center;
+
   margin-bottom: 2rem;
 }
 
