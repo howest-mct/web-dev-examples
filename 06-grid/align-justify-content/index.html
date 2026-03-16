@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>align-content and justify-content</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="title">
+        <code>align-content</code> and <code>justify-content</code>
+      </h1>
+      <div class="grid">
+        <div class="grid__item">1</div>
+        <div class="grid__item">2</div>
+        <div class="grid__item">3</div>
+        <div class="grid__item">4</div>
+        <div class="grid__item">5</div>
+        <div class="grid__item">6</div>
+      </div>
+      <p>
+        This example shows how free space is distributed around the whole grid
+        (the tracks), not inside each grid cell.
+        <code>justify-content: center;</code> centers the set of columns on the
+        inline axis, and <code>align-content: space-between;</code> distributes
+        the rows on the block axis. The container needs to have extra space for
+        these properties to have an effect, so the grid container has a fixed
+        height in this example.
+      </p>
+    </main>
+  </body>
+</html>
