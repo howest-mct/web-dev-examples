@@ -15,13 +15,25 @@ body {
   padding: 1rem;
 }
 
+/*
+ The only thing that a media query does is to conditionally apply the rules inside it, but once those rules are applied, they are just like any other CSS rule in the cascade.
+*/
+
 @media (width >= 576px) {
   .test {
     background-color: blue;
   }
 }
 
+/* 
+  This rule will override the rule in the media query, because it comes after it in the cascade.
+*/
+
 .test {
   background-color: hotpink;
   padding: 1rem;
 }
+
+/*
+  try moving the media query below the .test rule, and see how it changes the behavior of the page.
+*/
