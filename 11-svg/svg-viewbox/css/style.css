@@ -10,11 +10,11 @@ html {
 
 body {
   margin: 0;
-  padding: 1rem;
+  padding: 100px;
 }
 
 .svgs {
   display: flex;
-  gap: 1rem;
+  gap: 100px;
   flex-direction: column;
 }
