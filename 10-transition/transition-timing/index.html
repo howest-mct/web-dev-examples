@@ -2,45 +2,87 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Animation - timing function</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <p>Hover the boxes to see the transiton</p>
-  <div class="boxes">
-    <div class="box-explanation">
-      linear
-    </div>
-    <div class="box one"></div>
-    <div class="box-explanation">
-      ease
-    </div>
-    <div class="box two"></div>
-    <div class="box-explanation">
-      ease-in
-    </div>
-    <div class="box three"></div>
-    <div class="box-explanation">
-      ease-out
-    </div>
-    <div class="box four"></div>
-    <div class="box-explanation">
-      ease-in-out
-    </div>
-    <div class="box five"></div>
-    <div class="box-explanation">
-      ease-out-back with cubic-bezier()
-    </div>
-    <div class="box six"></div>
-    <div class="box-explanation">
-      steps(3)
-    </div>
-    <div class="box seven"></div>
-  </div>
+    <article>
+        <h2>linear</h2>
+        <div class="box">
+            <div class="dot linear"></div>
+        </div>
+    </article>
+    <article>
+        <h2>ease</h2>
+        <div class="box">
+            <div class="dot"></div>
+        </div>
+    </article>
+    <article>
+        <h2>ease-in</h2>
+        <div class="box">
+            <div class="dot ease-in"></div>
+        </div>
+    </article>
+    <article>
+        <h2>ease-out</h2>
+        <div class="box">
+            <div class="dot ease-out"></div>
+        </div>
+    </article>
+    <article>
+        <h2>ease-in-out</h2>
+        <div class="box">
+            <div class="dot ease-in-out"></div>
+        </div>
+    </article>
+    <article>
+        <h2>cubic-bezier(0.950, 0.050, 0.795, 0.035)</h2>
+        <div class="box">
+            <div class="dot ease-in-expo"></div>
+        </div>
+    </article>
+    <article>
+        <h2>cubic-bezier(0.190, 1.000, 0.220, 1.000);</h2>
+        <div class="box">
+            <div class="dot ease-out-expo"></div>
+        </div>
+    </article>
+    <article>
+        <h2>cubic-bezier(0.34, 1.56, 0.64, 1)</h2>
+        <div class="box">
+            <div class="dot ease-in-back"></div>
+        </div>
+    </article>
+    <article>
+        <h2>cubic-bezier(0.8, -0.4, 0.5, 1)</h2>
+        <div class="box">
+            <div class="dot ease-out-back"></div>
+        </div>
+    </article>
+    <article>
+        <h2>linear(...)</h2>
+        <div class="box">
+            <div class="dot spring"></div>
+        </div>
+    </article>
+    <article>
+        <h2>linear(...)</h2>
+        <div class="box">
+            <div class="dot bouncy"></div>
+        </div>
+    </article>
+    <article>
+        <h2>linear(...)</h2>
+        <div class="box">
+            <div class="dot overshoot"></div>
+        </div>
+    </article>
 </body>
 
 </html>
