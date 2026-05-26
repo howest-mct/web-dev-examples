@@ -9,7 +9,7 @@ body {
   border: 10px solid purple;
   padding: 2rem;
   margin: 2rem;
-  width: 500px;
+  max-width: 500px;
 }
 
 .inline-element {
@@ -20,4 +20,5 @@ body {
   padding: 1rem;
   margin: 1rem;
   border: 10px solid white;
+  display: inline-block;
 }

@@ -32,7 +32,7 @@ body {
   gap: 1rem;
 
   /* 1:2:3 ratio between the three columns */
-  grid-template-columns: 1fr 2fr 3fr;
+  grid-template-columns: 1fr 2fr 1fr;
 
   margin-bottom: 2rem;
 }

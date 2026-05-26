@@ -47,8 +47,9 @@ label input {
 
 .container-box {
   position: relative;
-  width: 300px;
-  height: 200px;
+  max-width: 400px;
+  padding: 1rem;
+  min-height: 200px;
   border: 2px dashed #c7c7c7;
   background: #fff;
 }
@@ -57,7 +58,7 @@ label input {
   position: static;
 }
 
-.box {
+.absolute-box {
   width: 100px;
   height: 100px;
   display: flex;
@@ -66,11 +67,12 @@ label input {
   font-weight: 700;
   color: #fff;
   border-radius: 4px;
-}
-
-.absolute-box {
   position: absolute;
   top: 40px;
   right: 20px;
   background: #d32f2f;
+}
+
+.absolute-box.no-absolute {
+  position: static;
 }

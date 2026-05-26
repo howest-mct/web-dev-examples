@@ -50,6 +50,9 @@ body {
 
 .header {
   grid-area: header;
+  grid-column: 1 / -1;
+  grid-column: 1 / span 4;
+  grid-column: 1 / 5;
   background-color: orange;
 }
 

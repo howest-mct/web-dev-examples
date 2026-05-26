@@ -51,8 +51,9 @@ h1 {
 
 .fixed-badge {
   position: fixed;
-  top: 1rem;
-  right: 1rem;
+  left: 1rem;
+  bottom: 1rem;
+  /* right: 1rem; */
   background: #d32f2f;
   color: #fff;
   font-weight: 700;
