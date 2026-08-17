@@ -16,7 +16,7 @@ html {
   line-height: 1.5;
   font-family: sans-serif;
   background-color: var(--deepPurple);
-  color: var(--deepYellow);
+  color: var(--deepPink);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -34,4 +34,16 @@ html {
   background-color: rgba(0, 0, 0, 0.5);
   border: 1px solid var(--deepPink);
   box-shadow: 0 0 25px var(--deepPink);
+}
+
+.button {
+  background-color: hotpink;
+
+  &:hover {
+    background-color: var(--deepYellow);
+    color: var(--deepPurple);
+  }
+}
+
+.button:hover {
 }

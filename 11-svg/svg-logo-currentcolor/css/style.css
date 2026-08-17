@@ -11,11 +11,11 @@
 html {
   background-color: black;
   color: var(--yellow);
+  /* color: hotpink; */
 }
 
 .logo {
   overflow: visible;
   max-width: 100%;
   height: auto;
-  /* fill: currentColor; */
 }

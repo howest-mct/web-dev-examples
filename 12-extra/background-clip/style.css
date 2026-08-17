@@ -17,7 +17,7 @@ body {
 }
 
 .clip-text {
-  background: url(http://i.giphy.com/fsULJFFGv8X3G.gif);
+  background-image: url(http://i.giphy.com/fsULJFFGv8X3G.gif);
   background-size: cover;
   background-position: center;
   background-clip: text;

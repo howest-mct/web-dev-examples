@@ -33,9 +33,9 @@ body {
   /* rotate: 45deg; */
   translate: 10rem;
   /* the same */
-  transform-origin: 0 0;
-  transform-origin: top left;
+  /* transform-origin: 0 0; */
+  /* transform-origin: top left; */
   /* the same */
-  transform-origin: 100% 100%;
-  transform-origin: bottom right;
+  /* transform-origin: 100% 100%; */
+  /* transform-origin: bottom right; */
 }

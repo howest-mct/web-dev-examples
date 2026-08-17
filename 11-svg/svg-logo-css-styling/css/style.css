@@ -20,14 +20,14 @@ svg {
 }
 
 .logo {
-  max-width: 600px;
+  /* max-width: 600px; */
   overflow: visible;
-  fill: var(--yellow);
+  fill: hotpink;
 }
 
 .logo__path-1 {
   fill: none;
   stroke: var(--yellow);
-  stroke-width: 5;
+  stroke-width: 20;
   stroke-linejoin: round;
 }

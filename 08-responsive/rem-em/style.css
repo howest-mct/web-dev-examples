@@ -17,7 +17,9 @@ html {
 }
 
 .em-parent {
+  background-color: hotpink;
   font-size: 2rem;
+  padding: 2em;
 }
 
 .em {

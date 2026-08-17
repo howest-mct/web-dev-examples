@@ -31,11 +31,13 @@ body {
 }
 
 .box--transformed {
+  /* scale: 2; */
+  /* transform: scale(2); */
   /* height: 15rem;
   width: 15rem; */
   /* scale: 0 2; */
 
   /* rotate: 720deg; */
-  translate: 4rem 4rem;
-  transform: skew(15deg, 15deg);
+  /* translate: 4rem 4rem; */
+  transform: skew(15deg, 0deg);
 }
