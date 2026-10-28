@@ -13,24 +13,24 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.o-row {
+.row {
   padding: 3rem 1.5rem;
   background-color: aliceBlue;
 }
 
 /* color modifiers */
 
-.o-row--dark {
+.row--dark {
   background-color: midnightBlue;
   color: #01fa99;
 }
 
-.c-cards {
+.cards {
   display: grid;
   gap: 1.5rem;
 }
 
-.c-card {
+.card {
   background-color: #fff;
   max-width: 36em;
   margin: 0 auto;
@@ -38,24 +38,24 @@ html {
   box-shadow: 4px 8px 15px rgb(0 0 0 / 0.25);
 }
 
-.c-card--inset {
+.card--inset {
   box-shadow: 2px 4px 5px rgb(0 0 0 / 0.25) inset;
 }
 
-.c-card--border {
+.card--border {
   box-shadow:
     0 0 0 1px rgb(0 0 0 / 0.125),
     2px 4px 15px rgb(0 0 0 / 0.125);
 }
 
-.c-card--multiple {
+.card--multiple {
   box-shadow:
     4px 4px 0 rgb(0 0 0 / 0.125),
     8px 8px 0 rgb(0 0 0 / 0.125),
     12px 12px 0 rgb(0 0 0 / 0.125);
 }
 
-.c-card--glow {
+.card--glow {
   background-color: rgb(255 255 255 / 0);
   box-shadow:
     0 0 0 1px rgb(0 250 153 / 0.5),

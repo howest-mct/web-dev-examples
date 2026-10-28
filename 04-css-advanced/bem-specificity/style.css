@@ -54,13 +54,13 @@ h1 {
   flex-wrap: wrap;
 }
 
-.c-button--secondary {
+.button--secondary {
   border-color: #2e7d32;
   background: #2e7d32;
   color: #fff;
 }
 
-.c-button {
+.button {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 2px solid #ccc;
@@ -70,7 +70,7 @@ h1 {
   cursor: pointer;
 }
 
-.c-button--primary {
+.button--primary {
   border-color: #1976d2;
   background: #1976d2;
   color: #fff;

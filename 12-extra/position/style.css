@@ -21,7 +21,7 @@ html {
   Position examples
 */
 
-.c-position {
+.position {
   padding: 24px;
   background-color: #fff;
   box-shadow:
@@ -30,7 +30,7 @@ html {
   background-color: MistyRose;
 }
 
-.c-position--relative {
+.position--relative {
   position: relative;
   top: 1.5rem;
   left: 1.5rem;
@@ -39,7 +39,7 @@ html {
   /*z-index: 1;*/
 }
 
-.c-position--absolute {
+.position--absolute {
   position: absolute;
   top: 48px;
   left: 48px;
@@ -47,7 +47,7 @@ html {
   background-color: PowderBlue;
 }
 
-.c-position--fixed {
+.position--fixed {
   position: fixed;
   bottom: 48px;
   left: 48px;
@@ -56,12 +56,12 @@ html {
   z-index: 100;
 }
 
-.c-position--sticky {
+.position--sticky {
   position: sticky;
   top: 24px;
   background-color: DarkSalmon;
 }
 
-.c-position--sticky + * {
+.position--sticky + * {
   padding-top: 24px;
 }

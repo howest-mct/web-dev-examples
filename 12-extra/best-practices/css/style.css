@@ -83,7 +83,7 @@ a {
 
 /* Container class to center all elements that are inside of it in the middle of the screen */
 
-.o-container {
+.container {
   /* Make this value as big as you want */
   max-width: 64rem;
   /* Center the container */
@@ -96,20 +96,20 @@ a {
 
 /* header styles */
 
-.c-header {
+.header {
   padding: var(--space-15);
   background-color: var(--black);
   color: var(--antique-white);
 }
 
-.c-header__container {
+.header__container {
   display: flex;
   flex-direction: column;
   gap: var(--space-15);
 }
 
 @media (width >= 768px) {
-  .c-header__container {
+  .header__container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -118,23 +118,23 @@ a {
 
 /* logo styles */
 
-.c-logo {
+.logo {
   font-size: 1rem;
 }
 
 /* navigation styles */
 
-.c-nav__list {
+.nav__list {
   list-style: none;
 }
 
-.c-nav__link {
+.nav__link {
   text-decoration: none;
   color: var(--antique-white);
 }
 
 @media (width >= 768px) {
-  .c-nav__list {
+  .nav__list {
     display: flex;
     gap: var(--space-15);
   }
@@ -142,27 +142,27 @@ a {
 
 /* section styles */
 
-.c-section {
+.section {
   padding: var(--space-3) var(--space-15);
 }
 
-.c-section__container {
+.section__container {
   display: grid;
   gap: var(--space-3);
 }
 
-.c-section__image {
+.section__image {
   mix-blend-mode: darken;
 }
 
-.c-section__content {
+.section__content {
   display: grid;
   gap: var(--space-15);
   justify-items: start;
 }
 
 @media (width >= 992px) {
-  .c-section__container {
+  .section__container {
     grid-template-columns: 1fr 1fr;
     gap: var(--space-3);
     align-items: center;
@@ -171,7 +171,7 @@ a {
 
 /* (link)button styles */
 
-.c-button {
+.button {
   display: inline-block;
   padding: var(--space-1) var(--space-15);
   background-color: var(--black);
