@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: #2b2118;
+}
+
+.header {
+  padding: 1.5rem;
+  background-color: #ffffff;
+}
+
+.header__logo {
+  display: block;
+  height: 2.375rem;
+  margin: 0 auto;
+}
+
+/* Fout: dit pad is geschreven vanaf de HTML-pagina,
+   maar de browser zoekt het vanaf deze CSS-file: css/img/hero.jpg */
+.hero {
+  padding: 9.5rem 1.5rem;
+  text-align: center;
+  background-color: #2b2118;
+  background-image: url("img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__title {
+  font-family: serif;
+  font-size: 3rem;
+  line-height: 1.1;
+  color: #fbf7f0;
+}

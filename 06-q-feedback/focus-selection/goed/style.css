@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  padding: 1.5rem;
+  font-family: sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #2b2118;
+  background-color: #ffffff;
+}
+
+/* Goud als achtergrond, donkerbruine tekst */
+::selection {
+  background-color: #e9c46a;
+  color: #2b2118;
+}
+
+.container {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.text {
+  margin-bottom: 1.5rem;
+}
+
+.actions {
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.875rem 1.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  border-radius: 9999rem;
+}
+
+/* :focus-visible verschijnt alleen bij toetsenbordnavigatie.
+   Een outline neemt geen plaats in, dus er verspringt niets. */
+.button:focus-visible {
+  outline: 4px solid #e9c46a;
+}
+
+.button--primary {
+  background-color: #b5562b;
+  color: #fbf7f0;
+}
+
+.button--primary:hover {
+  background-color: #8e3f1c;
+}
+
+.button--secondary {
+  border: 2px solid #b5562b;
+  color: #b5562b;
+}
+
+/* Staat voor :hover, zodat hover wint als beide tegelijk actief zijn */
+.button--secondary:focus-visible {
+  background-color: #fbf7f0;
+}
+
+.button--secondary:hover {
+  background-color: #b5562b;
+  color: #fbf7f0;
+}
