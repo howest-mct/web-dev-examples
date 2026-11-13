@@ -14,15 +14,14 @@ body {
   background-color: #ffffff;
 }
 
-/* Fout: kleuren omgedraaid, goud tekst op donkerbruin */
-::selection {
-  background-color: #2b2118;
-  color: #e9c46a;
-}
-
 .container {
   max-width: 40rem;
   margin: 0 auto;
+}
+
+.title {
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
 }
 
 .text {
@@ -40,31 +39,20 @@ body {
   font-weight: 600;
   line-height: 1;
   text-decoration: none;
+  color: #fbf7f0;
+  background-color: #b5562b;
   border-radius: 9999rem;
 }
 
-/* Fout: :focus verschijnt ook bij een muisklik,
-   en een border maakt de knop groter, dus alles eronder verspringt */
-.button:focus {
+/* :focus verschijnt ook bij een muisklik, en de ring blijft staan.
+   Een border maakt de knop groter, dus alles eronder verspringt. */
+.button--focus:focus {
   border: 4px solid #e9c46a;
   outline: none;
 }
 
-.button--primary {
-  background-color: #b5562b;
-  color: #fbf7f0;
-}
-
-.button--primary:hover {
-  background-color: #8e3f1c;
-}
-
-.button--secondary {
-  border: 2px solid #b5562b;
-  color: #b5562b;
-}
-
-.button--secondary:hover {
-  background-color: #b5562b;
-  color: #fbf7f0;
+/* :focus-visible verschijnt alleen bij toetsenbordnavigatie.
+   Een outline neemt geen plaats in, dus er verspringt niets. */
+.button--focus-visible:focus-visible {
+  outline: 4px solid #e9c46a;
 }

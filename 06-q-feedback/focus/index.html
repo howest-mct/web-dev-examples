@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>:focus en :focus-visible</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <p class="text">
+        Klik op een knop met de muis, en ga daarna met Tab door de knoppen.
+        Vergelijk wat er gebeurt bij de twee rijen.
+      </p>
+
+      <h2 class="title">:focus met een border</h2>
+      <div class="actions">
+        <a class="button button--focus" href="#">Schrijf je in</a>
+        <a class="button button--focus" href="#">Meer info</a>
+      </div>
+      <p class="text">Deze tekst verspringt: een border neemt plaats in.</p>
+
+      <h2 class="title">:focus-visible met een outline</h2>
+      <div class="actions">
+        <a class="button button--focus-visible" href="#">Schrijf je in</a>
+        <a class="button button--focus-visible" href="#">Meer info</a>
+      </div>
+      <p class="text">Deze tekst blijft staan: een outline neemt geen plaats in.</p>
+    </main>
+  </body>
+</html>
